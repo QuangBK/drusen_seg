@@ -17,7 +17,8 @@ Note: the pre-trained models are provided in this [link](https://drive.google.co
 ## Training
 - Step 1: train the DeepLab model. Please check the notebook file train_segmentation_Deep_lab.ipynb (Change all the PATH director before runing the notebook.)
 - Step 2: predict the segmentation mask with the trained DeepLab model from step 1. Please check the notebook file test_segmentation_Deep_lab.ipynb (Change all the PATH director before runing the notebook.)
-- Step 3: train the main model. Please check the notebook file train_main_model.ipynb (Change all the PATH director before runing the notebook.)
+- Step 3: Crop images, ground truth drusen mask and prediction drusen mask from trained DeepLab model (step 2). Please check the notebook file patch_extract.ipynb (Change all the PATH director before runing the notebook.)
+- Step 4: train the main model. Please check the notebook file train_main_model.ipynb (Change all the PATH director before runing the notebook.)
 
 ## Results
 ![alt text](https://github.com/QuangBK/drusen_seg/blob/master/fig_github.png?raw=true)
